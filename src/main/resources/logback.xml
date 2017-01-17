@@ -8,8 +8,8 @@
   </appender>
 
 <!--   <logger name="org.kie" level="trace" /> -->
-<!--   <logger name="org.drools.core.reteoo.SegmentMemory" level="trace" /> -->
-<!--   <logger name="org.drools.core.reteoo.PathMemory" level="trace" /> -->
+  <logger name="org.drools.core.reteoo.SegmentMemory" level="trace" />
+  <logger name="org.drools.core.reteoo.PathMemory" level="trace" />
 
 <!--   <logger name="org.drools.core.common.DefaultAgenda" level="debug" /> -->
 <!--   <logger name="org.drools.core.reteoo.EntryPointNode" level="debug" /> -->
