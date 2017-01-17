@@ -38,12 +38,12 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 @Warmup(iterations = 100000)
 @Measurement(iterations = 10000)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
-public class DroolsBenchmark1 {
+public class DroolsBenchmark2 {
 
     @Param({"phreak", "reteoo"})
     private String engine;
 
-    private static final String DRL = "accumulate-all-link.drl";
+    private static final String DRL = "accumulate-unlink.drl";
 
     KieBase kieBase;
     KieSession kieSession;
@@ -125,7 +125,7 @@ public class DroolsBenchmark1 {
     }
 
     public static void main(String[] args) throws RunnerException, IOException {
-        Options opt = new OptionsBuilder().include(DroolsBenchmark1.class.getSimpleName()).warmupIterations(0).measurementIterations(1).forks(1).build();
+        Options opt = new OptionsBuilder().include(DroolsBenchmark2.class.getSimpleName()).warmupIterations(0).measurementIterations(1).forks(1).build();
 
         new Runner(opt).run();
     }

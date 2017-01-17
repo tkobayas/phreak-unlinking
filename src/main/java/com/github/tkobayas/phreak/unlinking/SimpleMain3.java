@@ -17,9 +17,9 @@ import org.kie.internal.builder.conf.RuleEngineOption;
 import org.kie.internal.utils.KieHelper;
 import org.openjdk.jmh.runner.RunnerException;
 
-public class SimpleMain1 {
+public class SimpleMain3 {
 
-    private static final String DRL = "accumulate-all-link.drl";
+    private static final String DRL = "accumulate-unlink-100.drl";
 
     public static void main(String[] args) throws RunnerException, IOException {
 
